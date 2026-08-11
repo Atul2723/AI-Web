@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .crt-overlay {
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.12) 50%),
+                linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
+    background-size: 100% 3px, 3px 100%;
+    pointer-events: none;
+  }
+
+  .glass-panel {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  }
+
+  .glass-panel-amber {
+    background: rgba(245, 158, 11, 0.08);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(245, 158, 11, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+  }
+
+  .windows-shadow {
+    box-shadow: inset 1px 1px #ffffff, inset -1px -1px #848484, 1px 1px #000000;
+  }
+
+  .btn-win:active {
+    box-shadow: inset -1px -1px #ffffff, inset 1px 1px #848484;
+  }
+
+  .text-glow {
+    text-shadow: 0 0 12px rgba(0, 255, 255, 0.6), 0 0 24px rgba(0, 128, 128, 0.4);
+  }
+
+  .text-glow-amber {
+    text-shadow: 0 0 12px rgba(251, 191, 36, 0.6), 0 0 24px rgba(217, 119, 6, 0.4);
+  }
+
+  .flicker {
+    animation: flicker 0.15s infinite;
+  }
+}
+
+@keyframes flicker {
+  0% { opacity: 0.97; }
+  50% { opacity: 1; }
+  100% { opacity: 0.98; }
+}
+
+body {
+  background: radial-gradient(circle at center, #008080 0%, #004d4d 60%, #002626 100%);
+  color: #e2e8f0;
+  min-height: 100vh;
+}
+

@@ -1,0 +1,6 @@
+{
+  "name": "Corporate Majdoor - Nostalgic Grind",
+  "description": "An immersive nostalgic web experience for corporate workers featuring cubicle vibes, chai break interactive elements, MS Teams sounds, and glassmorphism playlist music player.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
